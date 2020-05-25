@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) Autodesk, Inc. All rights reserved
+// Written by Philippe Leefsma 2011 - ADN/Developer Technical Services
+//
+// Permission to use, copy, modify, and distribute this software in
+// object code form for any purpose and without fee is hereby granted,
+// provided that the above copyright notice appears in all copies and
+// that both that copyright notice and the limited warranty and
+// restricted rights notice below appear in all supporting
+// documentation.
+//
+// AUTODESK PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS.
+// AUTODESK SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+// MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC.
+// DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+// UNINTERRUPTED OR ERROR FREE.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- This is an example! Replace with your own ribbon properties ... -->
+
+<Ribbon>
+
+  <RibbonTab ribbons="Assembly|Part|Drawing"
+             internalName="id_TabCoolOrange"
+             displayName="coolOrange"
+             targetTab=""
+             insertBefore="false">
+
+    <RibbonPanel internalName="coolOrange.PointLinker.Panel"
+                 displayName="pointLinker"
+                 targetPanel=""
+                 insertBefore="false">
+
+      <Button internalName="coolOrange.PointLinker.PointLinkerCtrlCmd"
+              useLargeIcon="true"
+              isInSlideout="false"
+              targetControl=""
+              insertBefore="false"/>
+      <Button internalName="coolOrange.PointLinker.HelpCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+
+      <Button internalName="coolOrange.PointLinker.AboutCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+    </RibbonPanel>
+
+  </RibbonTab>
+
+  <RibbonTab ribbons="Assembly|Drawing|Part"
+             internalName="id_TabSketch"
+             displayName="Sketch"
+             targetTab=""
+             insertBefore="false">
+
+    <RibbonPanel internalName="coolOrange.PointLinker.Panel"
+                 displayName="pointLinker"
+                 targetPanel=""
+                 insertBefore="false">
+
+      <Button internalName="coolOrange.PointLinker.PointLinkerSketchCtrlCmd"
+              useLargeIcon="true"
+              isInSlideout="false"
+              targetControl=""
+              insertBefore="false"/>
+      <Button internalName="coolOrange.PointLinker.HelpCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+
+      <Button internalName="coolOrange.PointLinker.AboutCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+    </RibbonPanel>
+
+  </RibbonTab>
+
+  <RibbonTab ribbons="Part"
+             internalName="id_Tab3DSketch"
+             displayName="3D Sketch"
+             targetTab=""
+             insertBefore="false">
+
+    <RibbonPanel internalName="coolOrange.PointLinker.Panel"
+                 displayName="pointLinker"
+                 targetPanel=""
+                 insertBefore="false">
+
+      <Button internalName="coolOrange.PointLinker.PointLinkerSketchCtrlCmd"
+              useLargeIcon="true"
+              isInSlideout="false"
+              targetControl=""
+              insertBefore="false"/>
+      <Button internalName="coolOrange.PointLinker.HelpCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+
+      <Button internalName="coolOrange.PointLinker.AboutCtrlCmd"
+               useLargeIcon="false"
+               isInSlideout="true"
+               targetControl=""
+               insertBefore="false"/>
+    </RibbonPanel>
+
+  </RibbonTab>
+
+</Ribbon>

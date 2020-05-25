@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointLinker", "PointLinker\PointLinker.csproj", "{D7D3F143-5194-47D8-9A33-2CD8A977A827}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51E72C2F-1996-4DA4-86A5-AA515CCDC978}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{EB14E740-92F6-4E7E-96FF-92E4629D1AC9}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "PointLinkerWixSetup", "Setup\PointLinkerWixSetup\PointLinkerWixSetup.wixproj", "{EB064DA6-8AC2-461A-8110-DCCE199757A8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827} = {D7D3F143-5194-47D8-9A33-2CD8A977A827}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+		Setup|Any CPU = Setup|Any CPU
+		Setup|Mixed Platforms = Setup|Mixed Platforms
+		Setup|x86 = Setup|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Release|x86.ActiveCfg = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Setup|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Setup|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D7D3F143-5194-47D8-9A33-2CD8A977A827}.Setup|x86.ActiveCfg = Release|Any CPU
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Debug|Any CPU.ActiveCfg = Release|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Debug|x86.ActiveCfg = Release|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Release|Any CPU.ActiveCfg = Release|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Release|x86.ActiveCfg = Release|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Setup|Any CPU.ActiveCfg = Setup|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Setup|Any CPU.Build.0 = Setup|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Setup|Mixed Platforms.ActiveCfg = Setup|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Setup|Mixed Platforms.Build.0 = Setup|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Setup|x86.ActiveCfg = Setup|x86
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8}.Setup|x86.Build.0 = Setup|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB064DA6-8AC2-461A-8110-DCCE199757A8} = {EB14E740-92F6-4E7E-96FF-92E4629D1AC9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE4BBDC5-3FB2-4398-80FC-2C7264DD5EDF}
+	EndGlobalSection
+EndGlobal

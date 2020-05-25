@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Inventor" ProductType="Application" Name="coolOrange pointLinker" AppVersion="19.0.03" Description="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." Icon="./Contents/Documentation/Resources/resized_icon1.ico" OnlineDocumentation="www.coolorange.com" HelpFile="./Contents/Documentation/coolOrangepointLinker.html" ProductCode="{137DEF41-2728-461D-B236-199609038789}" UpgradeCode="{DB61E8C7-2EA8-4E29-8775-B637FB3EC56E}" SupportedLocales="Enu" AppNameSpace="appstore.exchange.autodesk.com" Author="coolOrange s.r.l" FriendlyVersion="19.0.03">
+  <CompanyDetails Name="coolOrange s.r.l" Url="www.coolorange.com" Email="support@coolorange.com" />
+  <Components Description="Contents parts">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AIP"/>
+    <ComponentEntry AppName="coolOrangepointLinker" Version="19.0.03" ModuleName="./Contents/coolOrange.PointLinker.Inventor.addin" AppDescription="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." />
+    <ComponentEntry AppName="coolOrangepointLinker" Version="19.0.03" ModuleName="./Contents/log4net.dll" AppDescription="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." />
+    <ComponentEntry AppName="coolOrangepointLinker" Version="19.0.03" ModuleName="./Contents/Log4PostSharp.dll" AppDescription="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." />
+    <ComponentEntry AppName="coolOrangepointLinker" Version="19.0.03" ModuleName="./Contents/Log4PostSharp.Weaver.dll" AppDescription="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." />
+    <ComponentEntry AppName="coolOrangepointLinker" Version="19.0.03" ModuleName="./Contents/PointLinker.dll" AppDescription="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." />
+    <ComponentEntry AppName="coolOrangepointLinker" Version="19.0.03" ModuleName="./Contents/PostSharp.dll" AppDescription="Allows points in an Autodesk® Inventor® Model to be associatively linked from an Excel file." />
+  </Components>
+</ApplicationPackage>

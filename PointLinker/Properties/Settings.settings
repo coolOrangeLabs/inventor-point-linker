@@ -1,0 +1,108 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PointLinker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="notMeetFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The selected Excel file does not meet the requirement formatting for the Link Points!</Value>
+    </Setting>
+    <Setting Name="hasMoreColumn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The selected point data include a Z coordinate for the points. 2D sketches do not support 3D points.
+
+ Only the X and Y coordinates will be used. Do you wish to continue?         </Value>
+    </Setting>
+    <Setting Name="notSketch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The currently edited object is not a sketch.
+
+Please activate the sketch to import points.</Value>
+    </Setting>
+    <Setting Name="failToGetExcel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Excel does not seem to be available!</Value>
+    </Setting>
+    <Setting Name="badExcelFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">error of opening excel file!</Value>
+    </Setting>
+    <Setting Name="hasImport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Selected file has been imported previously.
+
+Are you sure you want to continue to import a new item?
+          </Value>
+    </Setting>
+    <Setting Name="fileNotExists" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The Excel file does not exist, please resolve</Value>
+    </Setting>
+    <Setting Name="sketchAttSetName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Sketch</Value>
+    </Setting>
+    <Setting Name="errorCaption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Point Linker Error</Value>
+    </Setting>
+    <Setting Name="sketchPtAttName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Entity_Points_ID</Value>
+    </Setting>
+    <Setting Name="samePtCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The points will be updated one by one.
+
+The lines or spline will be re-created.</Value>
+    </Setting>
+    <Setting Name="difPtCount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Some previous points may have been missed, or the previous points count is different to the new file.
+Some new points may be added.
+Some old points may break the link with the excel file.
+The lines or spline will be re-created.</Value>
+    </Setting>
+    <Setting Name="errorUpdatePt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Error when update or resolve points!</Value>
+    </Setting>
+    <Setting Name="sketchLineAttName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Entity_Lines_ID</Value>
+    </Setting>
+    <Setting Name="sketchSLAttName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Entity_Spline_ID</Value>
+    </Setting>
+    <Setting Name="findSketchEntity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Entity*</Value>
+    </Setting>
+    <Setting Name="whenClose" Type="System.String" Scope="User">
+      <Value Profile="(Default)">No points exist with some items, do you want to delete the attribute information?</Value>
+    </Setting>
+    <Setting Name="noUnits" Type="System.String" Scope="User">
+      <Value Profile="(Default)">No units defined in the excel file, use default unit of document?</Value>
+    </Setting>
+    <Setting Name="lessPtForLines" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Lines need at least 2 points!</Value>
+    </Setting>
+    <Setting Name="lessPtForSpline" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Spline needs at least 2 points!</Value>
+    </Setting>
+    <Setting Name="generalError" Type="System.String" Scope="User">
+      <Value Profile="(Default)">An error occurred! Please contact the provider of the add-in!</Value>
+    </Setting>
+    <Setting Name="messageCaption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ADNPlugin-PointLinker</Value>
+    </Setting>
+    <Setting Name="capForOpenDlg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Select Excel File</Value>
+    </Setting>
+    <Setting Name="filterForOpenDlg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Excel Files|*.xls;*.xlsx</Value>
+    </Setting>
+    <Setting Name="upToDate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The status of this item is up to date!</Value>
+    </Setting>
+    <Setting Name="attSearchLines" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Entity_Lines*</Value>
+    </Setting>
+    <Setting Name="attSeatchSpline" Type="System.String" Scope="User">
+      <Value Profile="(Default)">_ADNPlugin_PointLinker_Entity_Spline*</Value>
+    </Setting>
+    <Setting Name="adjoiningPts" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Failed to create Line/Spline because two adjoining points were the same! </Value>
+    </Setting>
+    <Setting Name="failToOpenWorkbook" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Failed to open the Excel file!</Value>
+    </Setting>
+    <Setting Name="failToDelete" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Failed to open the sketch entities</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

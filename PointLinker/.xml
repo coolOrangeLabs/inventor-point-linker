@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PointLinker</name>
+    </assembly>
+    <members>
+        <member name="M:PointLinker.Helper.GetSketchFromGuid(System.String)">
+            <summary>
+            get sketch from guid
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.UpdateOrResolve">
+            <summary>
+            update or resolve the selected row
+            </summary>
+            <param name="oNewFileName"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.produceRowStrings(System.Object,System.String,System.String,System.String[]@)">
+            <summary>
+            produce strings for row
+            </summary>
+            <param name="oSketch"></param>
+            <param name="attName"></param>
+            <param name="attValue"></param>
+            <param name="rowStrs"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.IsDef(System.Object,System.Object@)">
+            <summary>
+            check if the object with "_ADNPlugin_LinkExcelPoints_Sketch"
+            is TitleBlockDefinition, BorderDefinition, or
+            SketchedSymbolDefinition
+            </summary>
+            <param name="oObj"></param>
+            <param name="oSketch"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.ProduceRows">
+            <summary>
+            produce rows for datagridview
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.CreateOrUpdateSketchAtt(System.Object@,System.String,PointLinker.Helper.PointOptionEnum,System.Int64,System.String@,System.String@)">
+            <summary>
+            Create AttributeSet and Attribute for a sketch, or
+            Update the attribute
+            AttSet Name: _ADNPlugin_LinkExcelPoints_SketchAtt 
+            each att is one set of points from one file
+            att name: guid  _9245fe4a-d402-451c-b9ed-9c1a04247482 
+            value: c:\temp\book1.xls|1|100|2011-3-21:14:30:24
+             FileName | Points Type | Points Count | Last Saved Time 
+            </summary>
+            <param name="oSketch"></param>
+            <param name="oFileName"></param>
+            <param name="oPointType"></param>
+            <param name="oPointsCount"></param>
+            <param name="oGuid"></param>
+            <param name="oValueString"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.ImportNewPoints(System.String)">
+            <summary>
+            Create New Points
+            </summary>
+            <param name="oFileName"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.Helper.ReadExcel(System.String,Inventor.ObjectCollection@,PointLinker.Helper.PointOptionEnum,System.Boolean)">
+            <summary>
+            Read data from excel file
+            
+            Criteria :
+            1. only import the first sheet
+            2. ignore any row until the first cell is 
+                number (valid row)
+            3. start read the continuous rows till the first cell 
+               is nonnumeric/empty
+            4. read 2 columns for 2d sketch, 
+               and 3 colums for 3d sketch
+            5. error scenarios:  
+               1) in 2d sketch, more than 2 columns. 
+                  ask user if continue:
+                  yes: just read the first and second columns
+                  no:  stop reading
+               2) count of columns is less than 2 in 2d sketch, or
+                  less than 3 in 3d sketch. pop out a dialog that the
+                  data does not meet requirement formatting 
+               3) if any cell in valid row is nonnumeric,
+                  stop can cancel reading.
+                  pop out a dialog that the data does not meet
+                  requirement formatting
+               
+            </summary>
+            <param name="fullFileName"></param>
+            <param name="oPtDataCollc"></param>
+            <param name="ptOp"></param>
+            <param name="is3D"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.ReadUIOption(System.String@,System.String@)">
+            <summary>
+            
+            read UI option from UIOption.txt within the addin dll
+            
+            </summary>
+            <param name="option1"></param>
+            <param name="option2"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.IsRibbonUI">
+            <summary>
+            
+            check if Inventor is Ribbon UI
+            
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.Ribbon_AddAlongSideUI">
+            <summary>
+            
+            add command alongside with the old UI
+            
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.Ribbon_ReplaceOldUI(System.Boolean)">
+            <summary>
+            
+            replace the old UI or reset back
+            
+            </summary>
+            <param name="isReplace"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.Ribbon_SeperatePanel">
+            <summary>
+            add command as a seperate panel
+            in sketch tab
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.Ribbon_ToolsTabUI">
+            <summary>
+            
+            add command to Tools tab
+            
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.oButtonDef_Sketch_OnExecute(Inventor.NameValueMap)">
+            <summary>
+            '
+            call command from sketch
+            
+            </summary>
+            <param name="Context"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.ControlsManager.oButtonDef_Tools_OnExecute(Inventor.NameValueMap)">
+            <summary>
+            
+            call command from tools tab/menu
+            
+            </summary>
+            <param name="Context"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.MainForm.BtnImport_Click(System.Object,System.EventArgs)">
+            <summary>
+            Import Points
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.MainForm.DataGV_CellPainting(System.Object,System.Windows.Forms.DataGridViewCellPaintingEventArgs)">
+            <summary>
+            add warning flag ahead of the row if it is not up to date
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.MainForm.ResolveToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            resolve the item to another excel file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:PointLinker.PointLinker.MainForm.UpdateToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            update the row with newer data of the excel file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <remarks></remarks>
+        </member>
+        <member name="T:PointLinker.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:PointLinker.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:PointLinker.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:PointLinker.Properties.Resources.excel">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:PointLinker.Properties.Resources.INV_APPs_PointLinker_16x16">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:PointLinker.Properties.Resources.INV_APPs_PointLinker_32x32">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:PointLinker.Properties.Resources.Light_Bulb">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+    </members>
+</doc>

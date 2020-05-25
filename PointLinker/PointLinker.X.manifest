@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="PointLinker"
+                    version="1.0.0.0">
+  </assemblyIdentity>
+
+  <clrClass clsid="{0ab6a38a-1619-43e5-a505-ec7497bd2d4b}"
+		progid="PointLinker.StandardAddInServer"
+		threadingModel="Both"
+		name="PointLinker.StandardAddInServer"
+		runtimeVersion="">
+  </clrClass>
+
+  <file name="PointLinker.dll" hashalg="SHA1"></file>
+
+</assembly>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmp17F317F3B29DC444A1747D8270D1742C" Guid="*">
+                <File Id="fil203B1145C39613A695DA5653C74DA7A0" KeyPath="yes" Source="$(var.OutputHarvestPath)\PackageContents.xml" />
+            </Component>
+            <Directory Id="dir97876F8F53187814DA9C036CB67DE3B6" Name="Contents">
+                <Component Id="cmpF11B204F9EC6736A5A6B761ACD7B3B6F" Guid="*">
+                    <File Id="filB26978E77083C77B46DDCB9B28EDB598" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\coolOrange.PointLinker.Inventor.addin" />
+                </Component>
+                <Component Id="cmpE55AE287F3CB154D811353507EE96D51" Guid="*">
+                    <File Id="filC8EDA11CBC2004603F2AB5C5088DAFAD" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\log4net.dll" />
+                </Component>
+                <Component Id="cmpDD62882E819C1E6411C9A188883D19F8" Guid="*">
+                    <File Id="fil4B7DF20D582A417941EAABEEBEDBD586" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\log4net.xml" />
+                </Component>
+                <Component Id="cmpCBF07B846A144F50BDE7168FAD990820" Guid="*">
+                    <File Id="fil6EF473B76A12ED4A5E50027B52991120" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\PointLinker.dll" />
+                </Component>
+                <Component Id="cmp3517A54D3EE7695926EB7244A148FB94" Guid="*">
+                    <File Id="fil75EDF586C1F578FC8EBB7DFFCB3FC907" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\PointLinker.dll.config" />
+                </Component>
+                <Component Id="cmp27DDCF680AD52366E6599507C0327A46" Guid="*">
+                    <File Id="filC9BDC73D692C80F0E0EA0C1A6B2465E6" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\PointLinker.dll.log4net" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="POINTLINKER_OUTPUT">
+            <ComponentRef Id="cmp17F317F3B29DC444A1747D8270D1742C" />
+            <ComponentRef Id="cmpF11B204F9EC6736A5A6B761ACD7B3B6F" />
+            <ComponentRef Id="cmpE55AE287F3CB154D811353507EE96D51" />
+            <ComponentRef Id="cmpDD62882E819C1E6411C9A188883D19F8" />
+            <ComponentRef Id="cmpCBF07B846A144F50BDE7168FAD990820" />
+            <ComponentRef Id="cmp3517A54D3EE7695926EB7244A148FB94" />
+            <ComponentRef Id="cmp27DDCF680AD52366E6599507C0327A46" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>
