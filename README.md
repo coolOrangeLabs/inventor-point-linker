@@ -15,9 +15,3 @@ THE USAGE OF THIS SAMPLE IS AT YOUR OWN RISK AND **THERE IS NO SUPPORT** RELATED
 Autodesk® Inventor® can import point data from an Excel file, but once the data has been imported, the link with the Excel file is not retained. If updates are required to the point data in the Excel file, the data must be manually re-imported and the associated model re-constructed. This is time consuming and inefficient.
 
 The pointLinker tool allows Inventor users to import points from an Excel file, retaining a link to that file. Data can be imported (as with the existing command), update from the Excel file, or mapped to another Excel file.
-
-## Author
-coolOrange s.r.l.  
-
-![coolOrange](https://user-images.githubusercontent.com/36075173/46519882-4b518880-c87a-11e8-8dab-dffe826a9630.png)
-
